@@ -14,8 +14,8 @@ const mapStateToProps = state => {
 };
 
 function RenderItem(props) {
-    const {item} = props;
-    if(props.isLoading) {
+    const { item } = props;
+    if (props.isLoading) {
         return <Loading />;
     }
     if (props.errMess) {
@@ -69,14 +69,14 @@ class Home extends Component {
 
     render() {
         return (
-            <Animated.ScrollView style={{transform: [{scale: this.state.scaleValue}]}}>
+            <Animated.ScrollView style={{ transform: [{ scale: this.state.scaleValue }] }}>
                 <RenderItem
                     item={this.props.campsites.campsites.filter(campsite => campsite.featured)[0]}
                     isLoading={this.props.campsites.isLoading}
                     errMess={this.props.campsites.errMess}
                 />
                 <RenderItem
-                    item={this.props.promotions.promotions.filter(promotion => promotion.featured)[0]} 
+                    item={this.props.promotions.promotions.filter(promotion => promotion.featured)[0]}
                     isLoading={this.props.promotions.isLoading}
                     errMess={this.props.promotions.errMess}
                 />
