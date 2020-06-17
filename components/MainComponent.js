@@ -325,9 +325,9 @@ class Main extends Component {
 
         NetInfo.fetch().then(connectionInfo => {
             (Platform.OS === 'ios') ?
-            Alert.alert('Initial Network Connectivity Type:', connectionInfo.type)
-            : ToastAndroid.show('Initial Network Connectivity Type: ' + 
-            connectionInfo.type, ToastAndroid.LONG);
+                Alert.alert('Initial Network Connectivity Type:', connectionInfo.type)
+                : ToastAndroid.show('Initial Network Connectivity Type: ' +
+                    connectionInfo.type, ToastAndroid.LONG);
         });
 
         this.unsubscribeNetInfo = NetInfo.addEventListener(connectionInfo => {
@@ -341,7 +341,7 @@ class Main extends Component {
 
     handleConnectivityChange = connectionInfo => {
         let connectionMsg = 'You are now connected to an active network.';
-        switch(connectionInfo.type) {
+        switch (connectionInfo.type) {
             case 'none':
                 connectionMsg = 'No network connection is active.';
                 break;
@@ -355,8 +355,8 @@ class Main extends Component {
                 connectionMsg = 'You are now connected to a WiFi network.';
                 break;
         }
-        (Platform.OS === 'ios') ? Alert.alert('Connection change:', connectionMsg) 
-        : ToastAndroid.show(connectionMsg, ToastAndroid.LONG);
+        (Platform.OS === 'ios') ? Alert.alert('Connection change:', connectionMsg)
+            : ToastAndroid.show(connectionMsg, ToastAndroid.LONG);
     }
 
     render() {
