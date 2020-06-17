@@ -2308,6 +2308,18 @@ expo-asset@~8.1.5:
     path-browserify "^1.0.0"
     url-parse "^1.4.4"
 
+expo-blur@~8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/expo-blur/-/expo-blur-8.1.0.tgz#44823ddd1ed4db3864c20fa7d9b7b91b65af0d76"
+  integrity sha512-X7UUmRPV6I/f+oKJqsgKFJnKshqseK8MukwdLpIwBh7VNHiYp5gK0ynq5KlLGG6kb9zo68acjsD27DYlerARJQ==
+  dependencies:
+    prop-types "^15.6.0"
+
+expo-brightness@~8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/expo-brightness/-/expo-brightness-8.1.0.tgz#89bcbbfb84bcecdf62ed5dd57651b0d5d6d9a3a9"
+  integrity sha512-4TZXtebiRLLFqrDWYZo/qBFV1wJjakuqgNb1WYXFSsIEf8qXMT8ypWw2p1t9o+la52id/AjdVNp8nopBBcyjOQ==
+
 expo-constants@~9.0.0:
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/expo-constants/-/expo-constants-9.0.0.tgz#35c600079ee91d38fe4f56375caae6e90f122fdd"
@@ -2332,6 +2344,11 @@ expo-font@~8.1.0:
   dependencies:
     fbjs "1.0.0"
     fontfaceobserver "^2.1.0"
+
+expo-image-picker@7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/expo-image-picker/-/expo-image-picker-7.0.0.tgz#e4a5a52bd6f9655f75ecf3cc866aa9bb0c99e24b"
+  integrity sha512-LeGdAqbeuB2KsT369ns1kDtCGbyDCmY2gIFlf/rsD3+UmagRFX9emZLGPEnUNdCWXoctSejjFwxDnCUtpvL6yw==
 
 expo-keep-awake@~8.1.0:
   version "8.1.0"
